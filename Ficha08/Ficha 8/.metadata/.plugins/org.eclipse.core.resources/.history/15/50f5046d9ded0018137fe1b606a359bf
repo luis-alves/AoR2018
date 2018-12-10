@@ -1,0 +1,12 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.13
+ */
+public class Turma {
+    protected String nome;
+    protected int horaInicio;
+    protected int limiteSala;
+
+}

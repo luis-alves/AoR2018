@@ -1,0 +1,23 @@
+import java.time.LocalDate;
+
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.13
+ */
+public class Disciplina {
+    protected String nome;
+    protected int limiteAlunos;
+    protected String professor;
+    protected LocalDate dataRealizacao;
+
+    public Disciplina(String nome, int limiteAlunos, String professor) {
+        super();
+        this.nome = nome;
+        this.limiteAlunos = limiteAlunos;
+        this.professor = professor;
+    }
+    
+    
+}

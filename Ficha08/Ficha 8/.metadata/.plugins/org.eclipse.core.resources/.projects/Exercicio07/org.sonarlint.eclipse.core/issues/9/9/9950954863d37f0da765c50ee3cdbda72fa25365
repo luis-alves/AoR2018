@@ -1,0 +1,13 @@
+
+nsquid:S1191"5Use classes from the Java API instead of Sun classes.(Í©³Óıÿÿÿÿ8ÇáÉÈò,HùRMAJORZ
+CODE_SMELL
+ssquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8’ÅâÈò,H†RMINORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HìRMINORZ
+CODE_SMELL
+¸squid:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›»Ÿã8Èò,HîRCRITICALZ
+CODE_SMELL
+€squid:UselessImportCheck":Remove this unused import 'sun.tools.tree.ThisExpression'.(Í©³Óıÿÿÿÿ8ÇáÉÈò,HûRMINORZ
+CODE_SMELL
+¡ squid:ForLoopCounterChangedCheck"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿ÕÎ8ÆôìÈò,H‰RMAJORZ
+CODE_SMELL

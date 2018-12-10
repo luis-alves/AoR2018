@@ -1,0 +1,20 @@
+/**
+ * Instaciação e teste de operadores de frações
+ *
+ * @sid 2012
+ * @aid 8.4
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+        Fracao num1 = new Fracao(1, 2);
+        Fracao num2 = new Fracao(2, 3);
+        
+        Fracao num3 = new Fracao();
+        num1.adicao(num2).imprimeFracao();;
+//        System.out.println("Subtração: " + num1.subtracao(num2).getFracao());
+//        System.out.println("Multiplicação: " + num1.multiplicacao(num2).getFracao());
+//        System.out.println("Divisão: " + num1.divisao(num2).getFracao());
+    }
+
+}

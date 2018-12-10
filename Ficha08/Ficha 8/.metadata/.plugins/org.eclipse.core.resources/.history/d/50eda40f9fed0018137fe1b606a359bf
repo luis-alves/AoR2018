@@ -1,0 +1,35 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.13
+ */
+public class Turma {
+    protected String nome;
+    protected int horaInicio;
+    protected int limiteSala;
+    
+    public Turma(String nome, int horaInicio, int limiteSala) {
+        super();
+        this.nome = nome;
+        this.horaInicio = horaInicio;
+        this.limiteSala = limiteSala;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getHoraInicio() {
+        return horaInicio;
+    }
+
+    public int getLimiteSala() {
+        return limiteSala;
+    }
+    
+    
+    
+    
+
+}

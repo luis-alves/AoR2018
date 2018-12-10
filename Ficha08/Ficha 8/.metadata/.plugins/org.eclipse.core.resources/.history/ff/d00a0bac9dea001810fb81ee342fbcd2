@@ -1,0 +1,35 @@
+import java.awt.Point;
+
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 1.1
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+        
+        Point topoEsquerdoPoint = new Point(0, 1);
+        Point topoDireitoPoint = new Point(1, 1);
+        Point baseDireitaPoint = new Point(1, 0);
+        Point baseEsquerdaPoint = new Point(0, 0);
+        
+        Point[] pontos = new Point[4];
+        
+        double a =  Math.abs(Math.atan2(1.0-0, 1.0-1.0));
+        double b = Math.abs(Math.atan2(1.0-1.0, 1.0-0.0));
+        System.out.println("a " + a + " b " + b);
+        
+        System.out.println("Final " + Math.toDegrees(a-b));
+        
+        pontos[0] = topoEsquerdoPoint;
+        pontos[1] = topoDireitoPoint;
+        pontos[2] = baseDireitaPoint;
+        pontos[3] = baseEsquerdaPoint;
+
+        Poligono quadrado = new Poligono(pontos);
+        System.out.println(quadrado.temTodosLadosIguais());
+    }
+
+}

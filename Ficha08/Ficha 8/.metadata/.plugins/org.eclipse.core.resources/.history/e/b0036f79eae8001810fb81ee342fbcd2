@@ -1,0 +1,45 @@
+import sun.tools.tree.ThisExpression;
+
+/**
+ * Definição de uma class de empréstimo bancário.
+ *
+ * @sid 2012
+ * @aid 
+ */
+public class Emprestimo {
+    private double prestacao;
+    private int numMeses;
+    private double TAXA = 0.01; // 1% taxa de juros
+    private double divida;
+    private double tempo;
+    private double totalJurosAcumulado;
+    
+    public Emprestimo() {
+        this.divida = 700 * (1+TAXA);
+    }
+    
+    public int pagamento(int mes, double prestacao) {
+        int NUMERO_MAX_MESES = 4 *12;
+        int LIMITE_PRESTACAO = 50;
+        int total = 0;
+        System.out.println(this.numMeses);
+        if (mes >= NUMERO_MAX_MESES) {
+            System.out.println("Erro! O número de meses excede o limite"
+                            + " que nosso banco permite");
+        } 
+        if (prestacao > 50) {
+            System.out.println("Erro! Colocou uma prestação superior ao "
+                            + "permitido, pelos nossos serviços");
+        } 
+        if (mes < NUMERO_MAX_MESES && prestacao <= LIMITE_PRESTACAO) {
+            this.numMeses = mes;
+            this.prestacao = prestacao; 
+            System.out.println("Prestação processada.");
+            total += 2;
+        }
+        
+        return total;
+    }
+    
+
+}

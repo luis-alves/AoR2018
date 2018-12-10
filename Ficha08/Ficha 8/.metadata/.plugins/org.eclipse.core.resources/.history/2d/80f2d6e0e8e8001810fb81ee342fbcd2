@@ -1,0 +1,36 @@
+/**
+ * Definição de uma class de empréstimo bancário.
+ *
+ * @sid 2012
+ * @aid 
+ */
+public class Emprestimo {
+    private double prestacao;
+    private int mes;
+    private double TAXA = 0.01; // 1% taxa de juros
+    private double divida;
+    private double tempo;
+    private double totalJurosAcumulado;
+    
+    public Emprestimo() {
+        this.divida = 700 * (1+TAXA);
+        this.mes = 1;
+    }
+    
+    public double pagamento(int mes, double prestacao) {
+        if (mes <= this.mes) {
+            System.out.println("Erro! Colocou um mês inferior ao até agora "
+                            + "decorrido");
+        } else {
+            this.mes = mes;
+        }
+        if (prestacao > 50) {
+            System.out.println("Erro! Colocou uma prestação superior ao "
+                            + "permitido, pelos nossos serviços");
+        } else {
+            this.prestacao = prestacao; 
+        }
+    }
+    
+
+}

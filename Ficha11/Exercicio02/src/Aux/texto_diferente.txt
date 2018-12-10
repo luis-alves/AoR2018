@@ -1,0 +1,4 @@
+123 ola
+Isto e um teste
+para contar o numeros de linhas e numero de vogais.
+Que pode um ficheiro conter.

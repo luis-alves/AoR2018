@@ -1,0 +1,19 @@
+
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.13
+ */
+public class DEI {
+    protected String nome;
+    protected String morada;
+    
+    public DEI(String nome, String morada) {
+        super();
+        this.nome = nome;
+        this.morada = morada;
+    }
+    
+    
+}

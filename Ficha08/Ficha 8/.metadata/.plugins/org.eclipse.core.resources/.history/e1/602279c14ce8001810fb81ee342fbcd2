@@ -1,0 +1,18 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+        Fracao num1 = new Fracao(10);
+        Fracao num2 = new Fracao(20);
+        
+        System.out.println("Adição: " + num1.adicao(num2).getFracao());
+        System.out.println("Subtração: " + num1.subtracao(num2).getFracao());
+        System.out.println("Multiplicação: " + num1.multiplicacao(num2).getFracao());
+    }
+
+}

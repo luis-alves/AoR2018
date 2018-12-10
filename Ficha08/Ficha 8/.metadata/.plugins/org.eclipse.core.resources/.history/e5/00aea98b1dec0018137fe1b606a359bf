@@ -1,0 +1,73 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.10
+ */
+public class MaquinaVendaBilhetes {
+    
+    final protected int ID;
+    protected int numeroBilhetes;
+    protected int numeroTitulos;
+    protected double valorEmCaixa;
+    
+    public MaquinaVendaBilhetes(int idMaquina) {
+        this.ID = idMaquina;
+        this.valorEmCaixa = 0;
+        this.numeroBilhetes = 0;
+        this.numeroTitulos = 0;
+    }
+    
+    public void abastecerMaquinaBilhetes(int qt) {
+        this.numeroBilhetes = qt;
+        // TODO Perguntar a professora se isto é correto:
+        this.valorEmCaixa += qt * new Bilhete().getPreco();
+    }
+
+    public void abastecerMaquinaTitulos(int qt) {
+        this.numeroTitulos = qt;
+        this.valorEmCaixa += qt * new Bilhete().getPreco();
+    }
+    
+    public void vendaBilhete(int qt, double valorEntregue) {
+        Bilhete temp = new Bilhete();
+        if (this.numeroBilhetes >= qt && valorEntregue >= qt*temp.getPreco()) {
+            this.numeroBilhetes -= qt;
+            this.valorEmCaixa += qt * temp.getPreco();
+            double troco = valorEntregue - qt * temp.getPreco();
+            if (troco > 0) {
+                System.out.format("Obrigado pela compra, aqui está o seu troco de i"
+                                + "%.2f. Boa viagem", troco);
+            } else {
+                System.out.format("Obrigado pela compra, tenha uma boa viagem");
+            }
+        } else if (this.numeroBilhetes < qt){
+            System.out.println("Desculpe mas não temos bilhetes suficientes, "
+                            + "por favor dirija-se à próxima máquina. "
+                            + "Obrigado");
+        }  else if (valorEntregue < qt * temp.getPreco()) {
+            System.out.println("Desculpe, mas o valor introduzido é "
+                            + "insuficiente");
+        }
+    }
+    
+    public double vendaTitulo(int qt) {
+        
+    }
+
+    public int getNumeroBilhetes() {
+        return numeroBilhetes;
+    }
+
+    public int getNumeroTitulos() {
+        return numeroTitulos;
+    }
+
+    public int getID() {
+        return ID;
+    }
+    
+
+
+    
+}

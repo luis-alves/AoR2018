@@ -1,0 +1,68 @@
+import java.util.Arrays;
+
+import sun.tools.tree.ThisExpression;
+
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.8
+ */
+public class Loja {
+    private String nomeLoja;
+    private String nomeDono;
+    private Flor[] transacoes;
+
+    public Loja(String nomeLoja, String nomeDono) {
+        this.nomeDono = nomeDono;
+        this.nomeLoja = nomeLoja;
+        this.transacoes = new Flor[3];
+    }
+    
+    public void vendaFlor(Flor a, double qt) {
+        int i = procurarLocalArmazem();
+        a.setQtVendida(qt);
+        a.setQtRecebida(0);
+        this.transacoes[i] = a;  
+    }
+    
+    private int procurarLocalArmazem() {
+        for (int i = 0; i < this.transacoes.length; i++) {
+            if (this.transacoes[i] == null) {
+                return i;
+            }
+        }
+        int index = this.transacoes.length;
+        // Não tem espaço, logo duplicar espaço
+        Flor[] temp = new Flor[this.transacoes.length*2];
+        for (int i = 0; i < this.transacoes.length; i++) {
+            temp[i] = this.transacoes[i]; 
+        }
+        this.transacoes = temp;
+        return index;
+       
+    }
+
+    public String getNomeLoja() {
+        return nomeLoja;
+    }
+
+    public String getNomeDono() {
+        return nomeDono;
+    }
+
+    public void getTransacoes() {
+        System.out.println("As transacções deste mês foram as seguintes:");
+        System.out.println("Produto       \t\t" + "Preço\t" + "Qt Recebida\t" + "Qt Vendida");
+        for (int i = 0; i < this.transacoes.length; i++) {
+            if (this.transacoes[i] != null) {
+                System.out.println(this.transacoes[i].getNome() + "       \t\t\t" +
+                                this.transacoes[i].getPreco() + "\t" +
+                                this.transacoes[i].getQtRecebida() + "\t" + 
+                                this.transacoes[i].getQtVendida());
+            }
+        }
+    }
+    
+    
+}

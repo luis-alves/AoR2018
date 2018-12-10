@@ -1,0 +1,43 @@
+
+rsquid:S1854">Remove this useless assignment to local variable "algoritmos".(³­ìÅ8çŠå·ó,HÎRMAJORZ
+CODE_SMELL
+xsquid:S1854"?Remove this useless assignment to local variable "luisAntonio".(¿¿Ë¶øÿÿÿÿ8çŠå·ó,HÊRMAJORZ
+CODE_SMELL
+isquid:S1481"0Remove this unused "luisAntonio" local variable.(¿¿Ë¶øÿÿÿÿ8çŠå·ó,HÃRMINORZ
+CODE_SMELL
+qsquid:S1854"=Remove this useless assignment to local variable "baseDados".(òÉŠ¹8çŠå·ó,HÌRMAJORZ
+CODE_SMELL
+qsquid:S1854"8Remove this useless assignment to local variable "java".(À¤½¿øÿÿÿÿ8çŠå·ó,HËRMAJORZ
+CODE_SMELL
+fsquid:S1481"-Remove this unused "joseRato" local variable.(™»—Øüÿÿÿÿ8çŠå·ó,HÄRMINORZ
+CODE_SMELL
+dsquid:S1481""0Remove this unused "miguelAlves" local variable.(þ—ÉÛ8çŠå·ó,HÅRMINORZ
+CODE_SMELL
+csquid:S1481"/Remove this unused "algoritmos" local variable.(³­ìÅ8çŠå·ó,H¿RMINORZ
+CODE_SMELL
+dsquid:S1481"+Remove this unused "fisica" local variable.(äºÝŒþÿÿÿÿ8çŠå·ó,HÀRMINORZ
+CODE_SMELL
+bsquid:S1481".Remove this unused "baseDados" local variable.(òÉŠ¹8çŠå·ó,HÁRMINORZ
+CODE_SMELL
+hsquid:S1481"4Remove this unused "intelArteficial" local variable.(¡ò—ó8çŠå·ó,H¾RMINORZ
+CODE_SMELL
+msquid:S1481&"4Remove this unused "manuelFrancisco" local variable.(†þÛŸûÿÿÿÿ8çŠå·ó,HÆRMINORZ
+CODE_SMELL
+jsquid:S1481"6Remove this unused "depEngInformatica" local variable.(¥Ï§†8çŠå·ó,H¼RMINORZ
+CODE_SMELL
+|squid:S1854&"CRemove this useless assignment to local variable "manuelFrancisco".(†þÛŸûÿÿÿÿ8çŠå·ó,HÇRMAJORZ
+CODE_SMELL
+usquid:S1854"<Remove this useless assignment to local variable "joseRato".(™»—Øüÿÿÿÿ8çŠå·ó,HÉRMAJORZ
+CODE_SMELL
+bsquid:S1481")Remove this unused "java" local variable.(À¤½¿øÿÿÿÿ8çŠå·ó,HÂRMINORZ
+CODE_SMELL
+ssquid:S1854""?Remove this useless assignment to local variable "miguelAlves".(þ—ÉÛ8çŠå·ó,HÈRMAJORZ
+CODE_SMELL
+wsquid:S1854"CRemove this useless assignment to local variable "intelArteficial".(¡ò—ó8çŠå·ó,HÏRMAJORZ
+CODE_SMELL
+ysquid:S1854"ERemove this useless assignment to local variable "depEngInformatica".(¥Ï§†8çŠå·ó,HÑRMAJORZ
+CODE_SMELL
+ssquid:S1854":Remove this useless assignment to local variable "fisica".(äºÝŒþÿÿÿÿ8çŠå·ó,HÍRMAJORZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.H›RMINORZ
+CODE_SMELL

@@ -1,0 +1,11 @@
+
+ssquid:S2184,"BCast one of the operands of this division operation to a "double".(ş¢ó˜ûÿÿÿÿ8§ÃÃ™ñ,HhRMINORZBUG
+\squid:S1125"(Remove the literal "true" boolean value.(Ä ­à8¬ªï£ñ,HRMINORZ
+CODE_SMELL
+Fsquid:S1220""Move this file to a named package.HcRMINORZ
+CODE_SMELL
+isquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8§ÃÃ™ñ,HlRINFOZ
+CODE_SMELL
+qsquid:S2184,"@Cast one of the operands of this integer division to a "double".(ş¢ó˜ûÿÿÿÿ8§ÃÃ™ñ,HiRMINORZBUG
+tsquid:UnusedPrivateMethod"-Remove this unused private "setPonto" method.(ˆ¹Ì‰úÿÿÿÿ8Ô—†ºñ,H°RMAJORZ
+CODE_SMELL

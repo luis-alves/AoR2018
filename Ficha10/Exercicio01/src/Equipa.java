@@ -1,0 +1,134 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Optional;
+
+/**
+ * @sid: 2012
+ * @aid: 10.1
+ */
+class Equipa {
+    private String nome;
+    private int numMaxJogadores;
+    private ArrayList<Jogador> jogadores;
+
+    Equipa(String nome, int numMaxJogadores) {
+        this.nome = nome;
+        this.numMaxJogadores = numMaxJogadores;
+        this.jogadores = new ArrayList<>();
+    }
+
+    Jogador jogadorMaisValioso() {
+        Jogador jogador = new Jogador() {
+            @Override
+            double pontuacao() {
+                return 0;
+            }
+        };
+
+        for (Jogador j: this.getJogadores()) {
+            if (j.pontuacao() > jogador.pontuacao()) {
+                jogador = j;
+            }
+        }
+        return jogador;
+    }
+
+    Jogador jogadorMaisValioso(int tipo) {
+        Jogador jogador = new Jogador() {
+            @Override
+            double pontuacao() {
+                return 0;
+            }
+        };
+
+        for (Jogador j: this.getJogadores()) {
+            if (j.tipoJogador() == tipo) {
+                if (j.pontuacao() > jogador.pontuacao()) {
+                    jogador = j;
+                }
+            }
+        }
+        return jogador;
+    }
+
+    void imprimirJogadores() {
+        if (this.jogadores != null && this.jogadores.size() > 0) {
+            for (Jogador jogador: this.jogadores) {
+                if (jogador instanceof GuardaRedes) {
+                    System.out.println("- " + jogador.getNome() +
+                            " | GS: " + ((GuardaRedes) jogador).pontuacao() +
+                            " | Pontuação " + ((GuardaRedes) jogador).pontuacao() +
+                            " | Tipo: " + ((GuardaRedes) jogador).tipoJogador());
+                } else if (jogador instanceof Defesa) {
+                    System.out.println("- " + jogador.getNome() +
+                            " | FC: " + ((Defesa) jogador).getNumFaltasCometidas() +
+                            " | RB: " + ((Defesa) jogador).getNumRecuperacaoBola() +
+                            " | Pontuação " + ((Defesa) jogador).pontuacao() +
+                            " | Tipo: " + ((Defesa) jogador).tipoJogador());
+                } else if (jogador instanceof Medio) {
+                    System.out.println("- " + jogador.getNome() +
+                            " | NA " + ((Medio) jogador).getNumAssitencias() +
+                            " | GM " + ((Medio) jogador).getNumGolosMarcados() +
+                            " | Pontuação " + ((Medio) jogador).pontuacao() +
+                            " | Tipo: " + ((Medio) jogador).tipoJogador());
+                } else if (jogador instanceof Avancado){
+                    System.out.println("- " + jogador.getNome() +
+                            " | GM " + ((Avancado) jogador).pontuacao() +
+                            " | Pontuação " + ((Avancado) jogador).pontuacao() +
+                            " | Tipo: " + ((Avancado) jogador).tipoJogador());
+                }
+            }
+        } else {
+            System.out.println("A equipa " + this.getNome().toString() + " não tem jogadores inscritos.");
+        }
+    }
+
+    void adicionarJogadorEquipaMaravilha(Jogador j, Campeonato c) {
+        this.jogadores.add(j);
+    }
+
+    void adicionarJogador(Jogador j, Campeonato c) {
+        Equipa jogadorInscrito = jogadorEstaInscrito(j, c);
+
+        if (jogadorInscrito == null) {
+            if (this.jogadores.size() < 24) {
+                this.jogadores.add(j);
+            } else {
+                System.out.println("A equipa atingiu o limite máximo de jogadores.");
+
+            }
+        } else {
+            System.out.println("O jogador " + j.getNome() + " já está inscrito na equipa " + jogadorInscrito.getNome());
+        }
+    }
+
+    private Equipa jogadorEstaInscrito(Jogador jogador, Campeonato campeonato) {
+        for (Equipa e:campeonato.getEquipas()) {
+            if (e.jogadores.contains(jogador)) {
+                return e;
+            }
+        }
+        return null;
+    }
+
+    void removerJogador(Jogador j) {
+        if (this.jogadores.contains(j)) {
+            this.jogadores.remove(j);
+            System.out.println("O jogador " + j.getNome() + " foi inscrito na equipa.");
+        } else
+            System.out.println("O jogador " + j.getNome() + " não está inscrito nesta equipa");
+
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    ArrayList<Jogador> getJogadores() {
+        return this.jogadores;
+    }
+
+    public int getNumMaxJogadores() {
+        return numMaxJogadores;
+    }
+}

@@ -1,0 +1,121 @@
+import java.util.Arrays;
+
+import sun.tools.tree.ThisExpression;
+
+/**
+ * 
+ *
+ * @sid 2012
+ * @aid 8.4
+ */
+public class Fracao {
+    
+    private int numerador;
+
+    private int denominador;
+    
+    public Fracao() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    public Fracao(int numerador, int denominador) {
+        this.numerador = numerador;
+        this.denominador = denominador;
+    }
+
+    public int getNumerador() {
+        return numerador;
+    }
+
+    public void setNumerador(int numerador) {
+        this.numerador = numerador;
+    }
+
+    public int getDenominador() {
+        return denominador;
+    }
+
+    public void setDenominador(int denominador) {
+        this.denominador = denominador;
+    }
+    
+    public void imprimeFracao() {
+        System.out.println("Resultado = " + this.numerador + " / " + this.denominador);
+    }
+
+//    public Fracao divisao(Fracao num) {
+//        Fracao num1 = new Fracao();
+//        
+//        if (num.numero > 0) {
+//            num1.numero = this.numero / num.numero;
+//            return num1;
+//        } else {
+//            return num1;
+//        }
+//        
+//    }
+
+//    public Fracao multiplicacao(Fracao num) {
+//        Fracao num1 = new Fracao();
+//        
+//        num1.numero = this.numero * num.numero;
+//        
+//        return num1;
+//    }
+
+//    public Fracao subtracao(Fracao num) {
+//        Fracao num1 = new Fracao();
+//        
+//        num1.numero = this.numero - num.numero;
+//        
+//        return num1;
+//    }
+    
+    public Fracao adicao(Fracao num) {
+        Fracao num1 = new Fracao();
+        
+        int mdc1 = minimoDenominadorComum(this.denominador, num.denominador);
+        int mdc2 = minimoDenominadorComum(num.denominador, this.denominador);
+        num1.denominador = this.denominador * mdc1;
+        System.out.println(mdc1 + " " + mdc2);
+        System.out.println(num.numerador * mdc2);
+        num1.numerador = this.numerador * mdc1 + num.numerador * mdc2;
+        
+        return num1;
+    }
+    
+    private int minimoDenominadorComum(int num1, int num2) {
+        int[] arr1 = new int[100];
+        int[] arr2 = new int[100];
+        for (int i = 0; i < 100; i++) {
+            arr1[i] = num1 * (i); 
+            arr2[i]= num2 * (i); 
+        }
+        int mdc = 0;
+        if (arr1[1] == arr2[1]) {
+            mdc = 1;
+            return mdc;
+        }
+        
+        boolean continuar = true;
+        int index = 2;
+        while (continuar == true) {
+            for (int i = 2; i < arr2.length-3; i++) {
+                System.out.println(arr1[index]);
+                System.out.println(arr2[i]);
+                if (arr1[index] == arr2[i]) {
+                    System.out.println("i " + i);
+                    mdc = i + 1;
+                    System.out.println(mdc);
+                    continuar = false;
+                    break;
+                }
+            }
+            index++;
+        }
+
+        return mdc;
+    }
+    
+
+}

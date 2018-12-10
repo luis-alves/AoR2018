@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Exercicio12/src/(default package)&apos;&#x0A;- Original project: &apos;Exercicio11&apos;&#x0A;- Destination element: &apos;Exercicio12/src/(default package)&apos;&#x0A;- Original elements:&#x0A;     Principal.java&#x0A;     Conta.java&#x0A;     Banco.java" description="Copy compilation units" destination="=Exercicio12/src&lt;" element1="/src&lt;{Principal.java" element2="/src&lt;{Conta.java" element3="/src&lt;{Banco.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1542739667939" units="3" version="1.0"/>
+</session>

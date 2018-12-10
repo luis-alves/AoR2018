@@ -1,0 +1,59 @@
+
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.13
+ */
+public class DEI {
+    protected String nome;
+    protected String morada;
+    protected Disciplina[] disciplinas;
+    
+    public DEI(String nome, String morada) {
+        super();
+        this.nome = nome;
+        this.morada = morada;
+        disciplinas = new Disciplina[4]; 
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getMorada() {
+        return morada;
+    }
+
+    public Disciplina[] getDisciplinas() {
+        return disciplinas;
+    }
+
+    public void adicionarDisciplina(Disciplina disciplina) {
+       int index = procurarLocalArmazem();
+       
+       this.disciplinas[index] = disciplina; 
+    }
+    
+    
+    private int procurarLocalArmazem() {
+        int index = this.disciplinas.length;
+        for (int i = 0; i < this.disciplinas.length; i++) {
+            if (disciplinas[i] == null) {
+                return i;
+            }
+        }
+        Disciplina[] temp = new Disciplina[disciplinas.length*2]; 
+        for (int i = 0; i < this.disciplinas.length; i++) {
+            temp[i] = disciplinas[i]; 
+        }
+        this.disciplinas = temp;
+        return index;
+    }
+    
+    
+    
+    
+    
+    
+}

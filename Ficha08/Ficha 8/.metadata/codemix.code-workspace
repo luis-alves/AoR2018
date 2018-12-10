@@ -1,0 +1,39 @@
+{
+  "folders": [
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio01"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio03"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio04"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio05"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio06"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio02"
+    },
+    {
+      "path": "/Users/luisalves/Documents/acertar_o_rumo/Ficha 8/Exercicio07"
+    }
+  ],
+  "settings": {
+    "javascript.referencesCodeLens.enabled": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "htmlhint.options": {
+      "attr-value-double-quotes": true,
+      "attr-no-duplication": true,
+      "tag-pair": true,
+      "spec-char-escape": true,
+      "id-unique": false,
+      "src-not-empty": true,
+      "title-require": true
+    }
+  }
+}

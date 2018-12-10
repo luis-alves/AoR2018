@@ -1,0 +1,10 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.7
+ */
+public class Turma {
+    String nome;
+    int quantidadeAlunosMax;
+}

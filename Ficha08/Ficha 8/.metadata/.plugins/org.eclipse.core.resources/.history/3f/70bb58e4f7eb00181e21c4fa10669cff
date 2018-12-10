@@ -1,0 +1,19 @@
+import java.time.LocalDate;
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.9
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+
+        Pessoa[] variasPessoas = new Pessoa[4];
+        
+        Pessoa luis = new Pessoa("Luis", "masculino", LocalDate.of(1975,10,9), "Rua sm");
+        
+        System.out.println(luis.getNascimento());
+    }
+
+}

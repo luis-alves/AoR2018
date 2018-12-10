@@ -1,0 +1,29 @@
+/**
+ * Breve descrição do código
+ *
+ * @sid 2012
+ * @aid 8.10
+ */
+public class Bilhete {
+
+    protected int numero = 0;
+    protected double preco;
+    
+    public Bilhete() {
+        this.numero++; 
+        this.preco = 1.4;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+    
+}

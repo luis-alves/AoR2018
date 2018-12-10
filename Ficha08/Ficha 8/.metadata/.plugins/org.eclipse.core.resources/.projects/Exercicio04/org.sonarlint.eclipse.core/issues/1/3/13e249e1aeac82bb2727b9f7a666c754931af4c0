@@ -1,0 +1,13 @@
+
+ssquid:UselessImportCheck"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ØÚí¸ñ,HéRMINORZ
+CODE_SMELL
+`squid:S1172Š"+Remove this unused method parameter "num1".(Õ÷ŸË8ÀÓ¹ñ,H¬RMAJORZ
+CODE_SMELL
+‰squid:S1192*"MDefine a constant instead of duplicating this literal "Resultado = " 3 times.(ßÔ¶¸ıÿÿÿÿ8şıñ¹ñ,H©RCRITICALZ
+CODE_SMELL
+Gsquid:S1220""Move this file to a named package.HRMINORZ
+CODE_SMELL
+\squid:S1125|"(Remove the literal "true" boolean value.(Ñ—ğĞ8†ˆå·ñ,HÔRMINORZ
+CODE_SMELL
+jsquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8Œ–³ñ,H‘RINFOZ
+CODE_SMELL
