@@ -15,8 +15,6 @@ public class Main {
             String linhaCopia = ler1.linha();
             while ((linha = ler.linha()) != null) {
                 if (!linha.equals(linhaCopia)) {
-//                    SyVstem.out.println(linha);
-//                    System.out.println(linhaCopia);
                     System.out.println("Os ficheiros são diferentes.");
                     return;
                 }
