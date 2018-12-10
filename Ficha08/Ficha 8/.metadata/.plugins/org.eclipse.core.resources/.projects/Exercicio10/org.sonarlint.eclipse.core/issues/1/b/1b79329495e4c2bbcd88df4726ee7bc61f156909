@@ -1,11 +1,0 @@
-
-Gsquid:S1220""Move this file to a named package.HRMINORZ
-CODE_SMELL
-€squid:ModifiersOrderCheck	"EReorder the modifiers to comply with the Java Language Specification.(ï÷Ã‰HRMINORZ
-CODE_SMELL
-csquid:S1135"2Complete the task associated to this TODO comment.(œ öÿÿÿÿÿHRINFOZ
-CODE_SMELL
-{squid:S00116	"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï÷Ã‰HRMINORZ
-CODE_SMELL
-Zsquid:S1168U"&Return an empty array instead of null.(¥¹ï8ÖûÜŒó,HÑRMAJORZ
-CODE_SMELL

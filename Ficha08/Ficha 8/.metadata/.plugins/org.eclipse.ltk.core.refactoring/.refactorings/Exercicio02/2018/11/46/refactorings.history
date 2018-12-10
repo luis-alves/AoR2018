@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Angulo.java&apos; to &apos;Exercicio06/src/(default package)&apos;&#x0A;- Original project: &apos;Exercicio02&apos;&#x0A;- Destination element: &apos;Exercicio06/src/(default package)&apos;&#x0A;- Original element: &apos;Angulo.java&apos;" description="Copy compilation unit" destination="=Exercicio06/src&lt;" element1="/src&lt;{Angulo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1542299340462" units="1" version="1.0"/>
-</session>

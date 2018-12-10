@@ -1,11 +1,0 @@
-
-Gsquid:S1220""Move this file to a named package.H…RMINORZ
-CODE_SMELL
-msquid:S18546"9Remove this useless assignment to local variable "talao".(þï»†8ƒ ¿‰ó,H°RMAJORZ
-CODE_SMELL
-^squid:S14815"*Remove this unused "talao" local variable.(„¬ê²8ƒ ¿‰ó,H¯RMINORZ
-CODE_SMELL
-`squid:S1481#",Remove this unused "bilhete" local variable.(Îµ‰¿8²”ø‡ó,H©RMINORZ
-CODE_SMELL
-osquid:S1854$";Remove this useless assignment to local variable "bilhete".(º²¥³8²”ø‡ó,H¨RMAJORZ
-CODE_SMELL

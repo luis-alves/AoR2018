@@ -1,23 +1,0 @@
-
-]squid:S19051")Remove this unnecessary cast to "double".(ê—º8—–¤œò,H‚RMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ëÛ—¦8““Ñ ò,HÒRMAJORZ
-CODE_SMELL
-…squid:S00103/"KSplit this 135 characters long line (which is greater than 120 authorized).(¿šãßøÿÿÿÿ8Š©Ö¡ò,HåRMAJORZ
-CODE_SMELL
-„squid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(¿šãßøÿÿÿÿ8Š©Ö¡ò,HäRMAJORZ
-CODE_SMELL
-€squid:S00103V"KSplit this 170 characters long line (which is greater than 120 authorized).(ìÂŞˆ8ÁÔ¯šò,HÈRMAJORZ
-CODE_SMELL
-]squid:S19050")Remove this unnecessary cast to "double".(ÂãŠ‘8—–¤œò,HRMINORZ
-CODE_SMELL
-squid:CommentedOutCodeLineV"<This block of commented-out lines of code should be removed.(ìÂŞˆ8ÁÔ¯šò,HÇRMAJORZ
-CODE_SMELL
-]squid:S19051")Remove this unnecessary cast to "double".(ê—º8—–¤œò,HƒRMINORZ
-CODE_SMELL
-Gsquid:S1220""Move this file to a named package.HÆRMINORZ
-CODE_SMELL
-„squid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(‚õ•…ÿÿÿÿÿ8Š©Ö¡ò,HãRMAJORZ
-CODE_SMELL
-]squid:S19050")Remove this unnecessary cast to "double".(ÂãŠ‘8—–¤œò,H€RMINORZ
-CODE_SMELL

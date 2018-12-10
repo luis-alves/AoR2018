@@ -1,11 +1,0 @@
-
-Gsquid:S1220""Move this file to a named package.HŸRMINORZ
-CODE_SMELL
-csquid:S00108*")Either remove or fill this block of code.(êþ‰ëþÿÿÿÿ8çá‘ºó,H„	RMAJORZ
-CODE_SMELL
-`squid:S1172)",Remove this unused method parameter "aluno".(ð•¥©8çá‘ºó,Hƒ	RMAJORZ
-CODE_SMELL
-^squid:S1068"*Remove this unused "turmas" private field.(õ¯ê‚8ôÄ€¾ó,H‡	RMAJORZ
-CODE_SMELL
-csquid:S1068"/Remove this unused "listaAlunos" private field.(“óø¯8ôÄ€¾ó,Hˆ	RMAJORZ
-CODE_SMELL
